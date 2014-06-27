@@ -1,21 +1,17 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Start here.
+ * Start page with name and method (MapChanger) into playable world.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Wasserman and Dykema 
+ * @version Alpha 1.0
  */
 public class Start extends World
 {
 
-    /**
-     * Constructor for objects of class Start.
-     * 
-     */
     public Start()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        // Create a world with dimensions 1280 by 720 cells with a cell size of 1 pixel
         super(1280, 720, 1);
         prepare();
     }

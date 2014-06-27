@@ -1,21 +1,18 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class MapChanger here.
+ * Changes from start screen to playable world
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Wasserman and Dykema 
+ * @version Alpha 1.0
  */
 public class MapChanger extends Actor
 {
-    /**
-     * Act - do whatever the MapChanger wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+
     public void act() 
     {
-          if (Greenfoot.isKeyDown("s"))
-               Greenfoot.setWorld(new Background());
+          if (Greenfoot.isKeyDown("s")) // Checks if S key is pressed
+               Greenfoot.setWorld(new Background()); //Changes world if above statement occurs
         }
     }    
 

@@ -1,39 +1,35 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Enemy here.
+ * Enemy AI Motion, Death by bullet detection and attack player methods.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Wasserman and Dykema
+ * @version Alpha 1.0
  */
 
 
 public class Enemy extends Actor
 {
-    /**
-     * Act - do whatever the Enemy wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void act() 
+    public void act() //Main enemy class
     {
         followHuman();
         aiattack();
         kaboom();
     }  
     
-    public void aiattack()
+    public void aiattack() // Attacks human (Removes object until health added)
 {
-                 Actor Person;
-        Person = getOneObjectAtOffset(0, 0, Player.class);
-            if (Person != null)
-    {
-        World world;
-        world = getWorld();
-        world.removeObject(Person);
-    }
+        Actor Person;
+        Person = getOneObjectAtOffset(0, 0, Player.class); // Detects collision
+        if (Person != null) // If person exists
+    	{
+	        World world;
+	        world = getWorld();
+	        world.removeObject(Person); // Removes object (Player)
+	    }
 }    
 
-public void followHuman()  
+public void followHuman()  // AI movement towards player
     {  
         int dist = 1000;  
         Actor closest = null;  
@@ -52,15 +48,16 @@ public void followHuman()
                     dist = playerDist;  
             }  
         }  
-        turnTowards(closest.getX(),closest.getY());  
+        turnTowards(closest.getX(),closest.getY());  // Sets r=direction to player location
         }     
     }  
-public void kaboom() {  
-    Actor bull = getOneIntersectingObject(Bullet.class); // get bullet  
-    if (bull != null) // is bullet there  
+public void kaboom() //Enemy death my bullet
+{
+    Actor bull = getOneIntersectingObject(Bullet.class); // Get bullet
+    if (bull != null) // If Bullet Exists
     {  
-        getWorld().removeObject(bull); // remove bullet  
-        getWorld().removeObject(this); // remove monster  
+        getWorld().removeObject(bull); // Removes Bullet 
+        getWorld().removeObject(this); // Removes Monster
     }  
 }  
 

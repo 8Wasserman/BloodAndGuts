@@ -1,20 +1,16 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Main playable character.
+ * Main playable character
  * 
- * @Wasserman @ Dykema 
- * @Aplha 1.0
+ * @Author Wasserman and Dykema
+ * @Version Alpha 1.0
  */
 public class Player extends Actor
 {
     long lastAdded = System.currentTimeMillis();
     
-    /**
-     * Act - do whatever the Player wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void act() 
+    public void act() // Main player method
     {
         movement();
         shoot();
@@ -22,35 +18,35 @@ public class Player extends Actor
 
 
 
-    public void shoot()
+    public void shoot() // Shooting method
     {
-         if (Greenfoot.isKeyDown("space"))
+         if (Greenfoot.isKeyDown("space")) // Checks if spacebar is pressed
         {
-            long curTime = System.currentTimeMillis();
-            if(curTime >= lastAdded + 800) 
+            long curTime = System.currentTimeMillis(); 
+            if(curTime >= lastAdded + 800) // Delay between shots
             {
-                getWorld().addObject (new Bullet(), getX(), getY());
-                lastAdded = curTime;
-                Greenfoot.playSound("awp.wav");
+                getWorld().addObject (new Bullet(), getX(), getY()); // Creates bullet
+                lastAdded = curTime; // Resets delay timer
+                Greenfoot.playSound("awp.wav"); // Plays shot audio
             }
         }
     }
     
-    public void movement()
+    public void movement() // Player movement
     {
-         if (Greenfoot.isKeyDown("left"))
+         if (Greenfoot.isKeyDown("left")) // Turn left
        {
            turn(-3);
         }
-        if (Greenfoot.isKeyDown("right"))
+        if (Greenfoot.isKeyDown("right")) // Turn right
         {
             turn(3);
         }
-        if (Greenfoot.isKeyDown("up"))
+        if (Greenfoot.isKeyDown("up")) // Move up
         {
             move(3);
         }
-        if (Greenfoot.isKeyDown("down"))
+        if (Greenfoot.isKeyDown("down")) // Move down
         {
             move(-3);
         }

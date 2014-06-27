@@ -1,21 +1,17 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class Bullet here.
+/**Adjust bullet speed, location, and shoot method
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * 
+ * @author Wasserman & Dykema
+ * @version Alpha 1.0
  */
 public class Bullet extends Actor
 {
-    /**
-     * Act - do whatever the Bullet wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
     public void act() 
     {
-        setLocation(getX(), getY()-5);
-        move(20);
+        setLocation(getX(), getY()-5); //Location of bullet creation
+        move(20); // Bullet Speed
         Shoot();
     }    
 
