@@ -10,13 +10,24 @@ public class Bullet extends Actor
 {
     public void act() 
     {
-        setLocation(getX(), getY()-5); //Location of bullet creation
         move(20); // Bullet Speed
-        Shoot();
-    }    
-
-    public void Shoot()
-    {
-
-    }
+        kaboom();
+        
+    } 
+    public boolean atWorldEdge()  
+    {  
+        if(getX() < 10 || getX() > getWorld().getWidth() - 10)  
+            return true;  
+        if(getY() < 10 || getY() > getWorld().getHeight() - 10)  
+            return true;  
+        else  
+            return false;  
+    } 
+    public void kaboom() // Bullet Clearing
+{
+    if (atWorldEdge()) // If Bullet Contacts Boundary
+    {  
+        getWorld().removeObject(this); // Removes Bullet
+    }  
+}  
 }

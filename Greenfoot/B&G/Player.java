@@ -25,7 +25,9 @@ public class Player extends Actor
             long curTime = System.currentTimeMillis(); 
             if(curTime >= lastAdded + 800) // Delay between shots
             {
-                getWorld().addObject (new Bullet(), getX(), getY()); // Creates bullet
+                Bullet b = new Bullet(); // Creates bullet
+                getWorld().addObject (b, getX(), getY()); // Adds bullet to world
+                b.setRotation(getRotation()); // Sets bullet direction
                 lastAdded = curTime; // Resets delay timer
                 Greenfoot.playSound("awp.wav"); // Plays shot audio
             }

@@ -11,8 +11,8 @@ public class Background extends World
 
     public Background()
     {    
-        // Create a world with dimensions 1280 by 720 cells with a cell size of 1 pixel and world boundary set to 0. (Allows bullets to leave screen.)
-        super(1280, 720, 1, false); 
+        // Create a world with dimensions 1280 by 720 cells with a cell size of 1 pixel
+        super(1280, 720, 1); 
 
         prepare(); // Method containing world layout.
     }

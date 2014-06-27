@@ -10,12 +10,35 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class Enemy extends Actor
 {
+    
     public void act() //Main enemy class
     {
+        moveIt();
         followHuman();
         aiattack();
         kaboom();
+   
+    
+    
     }  
+  
+   public boolean atWorldEdge()  
+    {  
+        if(getX() < 10 || getX() > getWorld().getWidth() - 10)  
+            return true;  
+        if(getY() < 10 || getY() > getWorld().getHeight() - 10)  
+            return true;  
+        else  
+            return false;  
+    } 
+     public void moveIt()
+    {
+        move(2);
+        if( atWorldEdge())
+        {
+            turn(5);
+        }
+    }
     
     public void aiattack() // Attacks human (Removes object until health added)
 {
@@ -29,28 +52,19 @@ public class Enemy extends Actor
 	    }
 }    
 
+
+    
+
 public void followHuman()  // AI movement towards player
     {  
-        int dist = 1000;  
-        Actor closest = null;  
+        String target;
+        
+        getObjectsInRange(1280, Player.class);
           
-        if(!getObjectsInRange(dist, Player.class).isEmpty())  
-        {  
-        for (Object obj: getObjectsInRange(dist, Player.class))  
-        {  
-       
-            Actor Player = (Actor) obj;  
-            move(2);
-            int playerDist = (int) Math.hypot(Player.getX() - getX(), Player.getY() - getY());  
-            if (closest == null || playerDist< dist)  
-            {  
-                    closest = Player;  
-                    dist = playerDist;  
-            }  
-        }  
-        turnTowards(closest.getX(),closest.getY());  // Sets r=direction to player location
+          int targetX = getX();
+          int targetY = getY();
         }     
-    }  
+     
 public void kaboom() //Enemy death my bullet
 {
     Actor bull = getOneIntersectingObject(Bullet.class); // Get bullet
