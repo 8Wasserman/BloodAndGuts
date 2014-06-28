@@ -32,5 +32,10 @@ public class Start extends World
         removeObject(mapchanger2);
         MapChanger mapchanger3 = new MapChanger();
         addObject(mapchanger3, 1262, 704);
+        mapchanger3.setLocation(1099, 303);
+        MapChanger mapchanger4 = new MapChanger();
+        addObject(mapchanger4, 173, 314);
+        mapchanger3.setLocation(1093, 308);
+        mapchanger3.setLocation(1100, 308);
     }
 }

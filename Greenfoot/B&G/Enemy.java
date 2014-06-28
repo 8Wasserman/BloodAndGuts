@@ -71,7 +71,7 @@ public void kaboom() //Enemy death my bullet
     if (bull != null) // If Bullet Exists
     {  
         getWorld().removeObject(bull); // Removes Bullet 
-        getWorld().removeObject(this); // Removes Monster
+        getWorld().removeObject(this); // Removes Enemy
     }  
 }  
 
