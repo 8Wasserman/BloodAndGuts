@@ -12,7 +12,6 @@ public class Bullet extends Actor
     {
         move(20); // Bullet Speed
         kaboom();
-        
     } 
     public boolean atWorldEdge()  
     {  
@@ -23,11 +22,11 @@ public class Bullet extends Actor
         else  
             return false;  
     } 
-    public void kaboom() // Bullet Clearing
-{
-    if (atWorldEdge()) // If Bullet Contacts Boundary
-    {  
-        getWorld().removeObject(this); // Removes Bullet
+        public void kaboom() // Bullet Clearing
+    {
+        if (atWorldEdge()) // If Bullet Contacts Boundary
+        {  
+            getWorld().removeObject(this); // Removes Bullet
+        }  
     }  
-}  
 }

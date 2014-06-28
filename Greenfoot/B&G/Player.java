@@ -13,46 +13,54 @@ public class Player extends Actor
     public void act() // Main player method
     {
         movement();
-        shoot();
+        checkClick();
     }  
-
-
-
-    public void shoot() // Shooting method
+    public void checkClick() // Checks mouse click for shooting
     {
-         if (Greenfoot.isKeyDown("space")) // Checks if spacebar is pressed
+        if(Greenfoot.mouseClicked(null))
         {
-            long curTime = System.currentTimeMillis(); 
-            if(curTime >= lastAdded + 800) // Delay between shots
-            {
-                Bullet b = new Bullet(); // Creates bullet
-                getWorld().addObject (b, getX(), getY()); // Adds bullet to world
-                b.setRotation(getRotation()); // Sets bullet direction
-                lastAdded = curTime; // Resets delay timer
-                Greenfoot.playSound("awp.wav"); // Plays shot audio
-            }
+            shoot();
         }
     }
+        public void shoot() // Shooting method
+        {
+                long curTime = System.currentTimeMillis(); 
+                if(curTime >= lastAdded + 800) // Delay between shots
+                {
+                    MouseInfo mouse = Greenfoot.getMouseInfo();  
+                    if (mouse == null)
+                    {
+                        return;  
+                    }
+                    int x = mouse.getX();  // Finds mosue click X
+                    int y = mouse.getY();  // Finds mouse click Y
+                    Bullet bullet = new Bullet();  // Creates bullet
+                    getWorld().addObject(bullet, getX(), getY());// Adds bullet
+                    bullet.turnTowards(x, y);  // Sets direction to click
+                    lastAdded = curTime; // Resets delay timer
+                    Greenfoot.playSound("awp.wav"); // Plays shot audio
+                }
+        }
+        
+        public void movement() // Player movement
+        {
+             if (Greenfoot.isKeyDown("left")) // Move left
+             {
+                 move(-3);
+             }
+             if (Greenfoot.isKeyDown("right")) // Move right
+             {
+                 move(3);
+             }
+             if (Greenfoot.isKeyDown("up")) // Move up
+             {
+                 setLocation(getX(), getY() - 3);
+             }
+             if (Greenfoot.isKeyDown("down")) // Move down
+             {
+                 setLocation(getX(), getY() + 3);
+             }
+        }
     
-    public void movement() // Player movement
-    {
-         if (Greenfoot.isKeyDown("left")) // Turn left
-       {
-           turn(-3);
-        }
-        if (Greenfoot.isKeyDown("right")) // Turn right
-        {
-            turn(3);
-        }
-        if (Greenfoot.isKeyDown("up")) // Move up
-        {
-            move(3);
-        }
-        if (Greenfoot.isKeyDown("down")) // Move down
-        {
-            move(-3);
-        }
     }
-
-}
 
