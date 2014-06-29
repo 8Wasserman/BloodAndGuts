@@ -2,13 +2,7 @@
 comment0.params=
 comment0.target=void\ act()
 comment1.params=
-comment1.target=boolean\ atWorldEdge()
+comment1.target=void\ aiattack()
 comment2.params=
-comment2.target=void\ moveIt()
-comment3.params=
-comment3.target=void\ aiattack()
-comment4.params=
-comment4.target=void\ followHuman()
-comment5.params=
-comment5.target=void\ kaboom()
-numComments=6
+comment2.target=void\ kaboom()
+numComments=3
