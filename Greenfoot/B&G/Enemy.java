@@ -30,7 +30,7 @@ public class Enemy extends Actor
                 }  
             }  
             turnTowards(closest.getX(),closest.getY());  
-            move(3);
+            move(2);
             setRotation(0);
         }     
         aiattack();
