@@ -23,7 +23,7 @@ public class Player extends Actor
     public void shoot() // Shooting method
     {
         long curTime = System.currentTimeMillis();
-        if(curTime >= lastAdded + 1200) // Delay between shots
+        if(curTime >= lastAdded + 1250) // Delay between shots
         {
             MouseInfo mouse = Greenfoot.getMouseInfo();  // Initializes mouse
             if (mouse == null)
