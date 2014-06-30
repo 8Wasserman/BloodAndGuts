@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class escListener here.
+ * Changes from control screen to main menu when ESC is pressed
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Wasserman and Dykema
+ * @version Alpha 1.0
  */
 public class escListener extends Actor
 {

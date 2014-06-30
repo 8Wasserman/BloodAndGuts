@@ -2,10 +2,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.awt.Color;
 import java.awt.Font;
 /**
- * Write a description of class KillCount here.
+ * Prints Zombies Killed
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Wasserman & Dykema
+ * @version Aplpha 1.0
  */
 public class KillCount extends Actor
 {

@@ -11,7 +11,7 @@ public class Enemy extends Actor
 {
     public void act() //Main enemy class
     {
-        int dist = 1000;
+        int dist = 1500;
         Actor closest = null;
         if(!getObjectsInRange(dist, Player.class).isEmpty())
         {
