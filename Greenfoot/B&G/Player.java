@@ -73,6 +73,7 @@ public class Player extends Actor
         {
             health = health - 50;
             zomb.setLocation(getX()+200, getY());
+            Greenfoot.playSound("Hit.wav"); // Plays hit audio
         }
     }
 }

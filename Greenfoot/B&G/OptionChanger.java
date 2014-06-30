@@ -15,6 +15,9 @@ public class OptionChanger extends Actor
     public void act() 
     {
         if (Greenfoot.isKeyDown("c")) // Checks if C key is pressed
-               Greenfoot.setWorld(new Controls()); //Changes world if above statement occurs
-    }    
+        {
+            Greenfoot.setWorld(new Controls()); //Changes world if above statement occurs
+            Greenfoot.playSound("MenuSelect.wav"); // Plays shot audio    
+        }
+    }
 }
