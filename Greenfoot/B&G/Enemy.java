@@ -6,9 +6,9 @@ import greenfoot.*; // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 * @version Alpha 1.0
 */
 public class Enemy extends Actor
-{
+{    
     public void act() //Main enemy class
-    {
+    {           
         int dist = 1500;
         Actor closest = null;
         if(!getObjectsInRange(dist, Player.class).isEmpty())

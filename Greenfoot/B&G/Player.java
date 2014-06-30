@@ -16,7 +16,7 @@ public class Player extends Actor
         hitZomb();
         if (health == 0)
         {          
-            getWorld().removeObject(this);
+            Greenfoot.setWorld(new GameOver());    
         }
     }
     public void checkClick() // Checks mouse click for shooting
