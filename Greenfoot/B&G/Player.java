@@ -16,7 +16,8 @@ public class Player extends Actor
         hitZomb();
         if (health == 0)
         {          
-            Greenfoot.setWorld(new GameOver());    
+            Greenfoot.setWorld(new GameOver());  
+            Greenfoot.playSound("DeathSong.wav"); // Plays hit audio
         }
     }
     public void checkClick() // Checks mouse click for shooting
