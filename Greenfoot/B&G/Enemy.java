@@ -1,6 +1,4 @@
 import greenfoot.*; // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-import java.awt.Color;
-import java.awt.Font;
 /**
 * Enemy AI Motion, Death by bullet detection and attack player methods.
 *
@@ -29,19 +27,7 @@ public class Enemy extends Actor
             move(2);
             setRotation(0);
         }
-        aiattack();
         kaboom();
-    }
-    public void aiattack() // Attacks human (Removes object until health added)
-    {
-        Actor Person;
-        Person = getOneObjectAtOffset(0, 0, Player.class); // Detects collision
-        if (Person != null) // If person exists
-        {
-            World world;
-            world = getWorld();
-            world.removeObject(Person); // Removes object (Player)
-        }
     }
     public void kaboom() //Enemy death by bullet
     {

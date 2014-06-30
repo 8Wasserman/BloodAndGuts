@@ -7,11 +7,17 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 */
 public class Player extends Actor
 {
+    int health = 100;
     long lastAdded = System.currentTimeMillis();
     public void act() // Main player method
     {
         movement();
         checkClick();
+        hitZomb();
+        if (health == 0)
+        {          
+            getWorld().removeObject(this);
+        }
     }
     public void checkClick() // Checks mouse click for shooting
     {
@@ -57,6 +63,16 @@ public class Player extends Actor
         if (Greenfoot.isKeyDown("down") || (Greenfoot.isKeyDown("s"))) // Move down
         {
             setLocation(getX(), getY() + 4);
+        }
+    }
+     public void hitZomb() // Human takes damage
+    {
+        Actor zomb;
+        zomb = getOneObjectAtOffset(0, 0, Enemy.class); // Detects collision
+        if (zomb != null) // IfZomb hasn't been hit already
+        {
+            health = health - 50;
+            zomb.setLocation(getX()+200, getY());
         }
     }
 }
