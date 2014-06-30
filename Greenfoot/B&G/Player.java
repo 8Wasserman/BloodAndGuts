@@ -44,19 +44,19 @@ public class Player extends Actor
     {
         if (Greenfoot.isKeyDown("left") || (Greenfoot.isKeyDown("a"))) // Move left
         {
-            move(-3);
+            move(-4);
         }
         if (Greenfoot.isKeyDown("right") || (Greenfoot.isKeyDown("d"))) // Move right
         {
-            move(3);
+            move(4);
         }
         if (Greenfoot.isKeyDown("up") || (Greenfoot.isKeyDown("w"))) // Move up
         {
-            setLocation(getX(), getY() - 3);
+            setLocation(getX(), getY() - 4);
         }
         if (Greenfoot.isKeyDown("down") || (Greenfoot.isKeyDown("s"))) // Move down
         {
-            setLocation(getX(), getY() + 3);
+            setLocation(getX(), getY() + 4);
         }
     }
 }

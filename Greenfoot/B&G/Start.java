@@ -26,6 +26,6 @@ public class Start extends World
         addObject(mapchanger, 197, 363);
         OptionChanger optionchanger = new OptionChanger();
         addObject(optionchanger, 1106, 358);
-        optionchanger.setLocation(1089, 357);
+        optionchanger.setLocation(1089, 363);
     }
 }
