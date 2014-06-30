@@ -37,6 +37,7 @@ public class Player extends Actor
             bullet.turnTowards(x, y);  // Sets direction to click
             lastAdded = curTime; // Resets delay timer
             Greenfoot.playSound("awp.wav"); // Plays shot audio
+            
         }
     }
     public void movement() // Player movement

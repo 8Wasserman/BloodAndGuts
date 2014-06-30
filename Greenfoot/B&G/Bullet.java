@@ -25,8 +25,7 @@ public class Bullet extends Actor
     {
         if (atWorldEdge()) // If Bullet Contacts Boundary
         {
-            getWorld().removeObject(this);
-            // Removes Bullet
+            getWorld().removeObject(this);// Removes Bullet
         }
     }
 }

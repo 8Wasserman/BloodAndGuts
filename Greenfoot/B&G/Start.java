@@ -23,19 +23,9 @@ public class Start extends World
     private void prepare()
     {
         MapChanger mapchanger = new MapChanger();
-        addObject(mapchanger, 1111, 313);
-        MapChanger mapchanger2 = new MapChanger();
-        addObject(mapchanger2, 171, 338);
-        mapchanger2.setLocation(169, 325);
-
-        removeObject(mapchanger);
-        removeObject(mapchanger2);
-        MapChanger mapchanger3 = new MapChanger();
-        addObject(mapchanger3, 1262, 704);
-        mapchanger3.setLocation(1099, 303);
-        MapChanger mapchanger4 = new MapChanger();
-        addObject(mapchanger4, 173, 314);
-        mapchanger3.setLocation(1093, 308);
-        mapchanger3.setLocation(1100, 308);
+        addObject(mapchanger, 197, 363);
+        OptionChanger optionchanger = new OptionChanger();
+        addObject(optionchanger, 1106, 358);
+        optionchanger.setLocation(1089, 357);
     }
 }

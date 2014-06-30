@@ -1,4 +1,6 @@
 import greenfoot.*; // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.awt.Color;
+import java.awt.Font;
 /**
 * Enemy AI Motion, Death by bullet detection and attack player methods.
 *
