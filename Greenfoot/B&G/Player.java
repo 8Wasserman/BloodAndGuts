@@ -42,7 +42,7 @@ public class Player extends Actor
             getWorld().addObject(bullet, getX(), getY());// Adds bullet to playable world
             bullet.turnTowards(x, y);  // Sets direction to click
             lastAdded = curTime; // Resets delay timer
-            Greenfoot.playSound("awp.wav"); // Plays shot audio
+            Greenfoot.playSound("Gunshot.wav"); // Plays shot audio
             
         }
     }
