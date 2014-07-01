@@ -14,8 +14,26 @@ public class Player extends Actor
         movement();
         checkClick();
         hitZomb();
-        if (health == 0)
+        
+        Heart heart = new Heart();
+        Heart heart2 = new Heart();
+        Heart heart3 = new Heart();
+
+        getWorld().addObject(heart, 1248, 32);
+        getWorld().addObject(heart2, 1188, 32);
+        getWorld().addObject(heart3, 1128, 32);
+        
+        if(health <= 66)
+        {
+            getWorld().removeObject(heart3);
+        }
+        if(health <= 32)
+        {
+            getWorld().removeObject(heart2);
+        }
+        if (health <= 0)
         {          
+            getWorld().removeObject(heart); 
             Greenfoot.setWorld(new GameOver());  
             Greenfoot.playSound("DeathSong.wav"); // Plays hit audio
         }
@@ -72,7 +90,7 @@ public class Player extends Actor
         zomb = getOneObjectAtOffset(0, 0, Enemy.class); // Detects collision
         if (zomb != null) // IfZomb hasn't been hit already
         {
-            health = health - 50;
+            health = health - 34;
             zomb.setLocation(getX()+200, getY());
             Greenfoot.playSound("Hit.wav"); // Plays hit audio
         }
