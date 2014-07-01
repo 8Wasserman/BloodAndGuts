@@ -15,10 +15,27 @@ public class KillCount extends Actor
      */
     public void act() 
     { 
-        Font font = getWorld().getBackground().getFont();  
-        font = font.deriveFont(28.0f);  
-        getWorld().getBackground().setFont(font);  
-        getWorld().getBackground().setColor(Color.blue);//or another color  
-        getWorld().getBackground().drawString("Zombies Killed: ", 3, 25);  
-    }    
+        //String score;
+        //setImage(new GreenfootImage(text,24, Color.black, new Color(0, 0, 0, 0,))); 
+        //score = "Zombies Killed: " + Background.killCount;
+        //getWorld().score.setText("Zombies Killed: " + Background.killCount);
+        Background.score.setText("hi");
+        getWorld().getBackground().drawString("Kill Count: " + Background.killCount, 3, 25);
+        //getWorld().getBackground().drawString(score, 3, 25);
+    }
+    
+    public KillCount()
+    {
+        this(""); 
+    }
+    
+    public KillCount(String text)
+    {
+        setText(text);
+    }
+    
+    public void setText(String text)
+    {
+        setImage(new GreenfootImage(text, 24, Color.black, new Color(0, 0, 0, 0)));
+    }
 }

@@ -40,6 +40,7 @@ public class Enemy extends Actor
         {
             getWorld().removeObject(bull); // Removes Bullet
             getWorld().removeObject(this); // Removes Enemy
+            Background.killCount++;
         }
     }
 }

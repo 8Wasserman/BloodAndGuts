@@ -8,7 +8,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Background extends World
 {
-
+    //Holds score
+    public static int killCount = 0;
+    public static KillCount score = new KillCount();
     public Background()
     {    
         // Create a world with dimensions 1280 by 720 cells with a cell size of 1 pixel
@@ -23,7 +25,7 @@ public class Background extends World
      */
     private void prepare()
     {
-		// Creates new player
+        // Creates new player
         Player player = new Player(); 
         
         // Creates Score + Wave
@@ -31,16 +33,16 @@ public class Background extends World
         addObject(score, 13, 75);
         waveNumber wave = new waveNumber();
         addObject(wave, 13, 75);
-		
-		//Creates enemies
-		Enemy enemy = new Enemy(); 
-		Enemy enemy2 = new Enemy(); 
-		Enemy enemy3 = new Enemy(); 
-		Enemy enemy4 = new Enemy(); 
-		Enemy enemy5 = new Enemy(); 
-		Enemy enemy6 = new Enemy();
-		
-		// Adds objects to world at specified coordinates
+        
+        //Creates enemies
+        Enemy enemy = new Enemy(); 
+        Enemy enemy2 = new Enemy(); 
+        Enemy enemy3 = new Enemy(); 
+        Enemy enemy4 = new Enemy(); 
+        Enemy enemy5 = new Enemy(); 
+        Enemy enemy6 = new Enemy();
+        
+        // Adds objects to world at specified coordinates
         addObject(player, 335, 424); 
         addObject(enemy, 959, 49);
         addObject(enemy2, 1134, 105);
