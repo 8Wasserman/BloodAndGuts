@@ -1,11 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Heart here.
+ * Acts solely as an image
  * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+ * @author Wasserman and Dykema
+ * @version Alpha 1.0
+ * 
+ **/
 public class Heart extends Actor
 {
     /**
@@ -14,6 +15,6 @@ public class Heart extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        // No action code
     }    
 }
