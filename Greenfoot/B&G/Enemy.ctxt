@@ -2,5 +2,7 @@
 comment0.params=
 comment0.target=void\ act()
 comment1.params=
-comment1.target=void\ kaboom()
-numComments=2
+comment1.target=void\ followHuman()
+comment2.params=
+comment2.target=void\ kaboom()
+numComments=3

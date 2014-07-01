@@ -6,9 +6,14 @@ import greenfoot.*; // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 * @version Alpha 1.0
 */
 public class Enemy extends Actor
-{    
+{  
     public void act() //Main enemy class
     {           
+        followHuman();
+        kaboom();
+    }
+    public void followHuman()
+    {
         int dist = 1500;
         Actor closest = null;
         if(!getObjectsInRange(dist, Player.class).isEmpty())
@@ -27,7 +32,6 @@ public class Enemy extends Actor
             move(2);
             setRotation(0);
         }
-        kaboom();
     }
     public void kaboom() //Enemy death by bullet
     {
