@@ -25,6 +25,7 @@ public class Background extends World
      */
     private void prepare()
     {
+        killCount = 0;
         // Creates new player
         Player player = new Player(); 
         

@@ -9,33 +9,38 @@ import java.awt.Font;
  */
 public class KillCount extends Actor
 {
+    public GreenfootImage label = new GreenfootImage(200, 200);
     /**
      * Act - do whatever the KillCount wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
     { 
+        //getWorld().getBackground().clear();
         //String score;
         //setImage(new GreenfootImage(text,24, Color.black, new Color(0, 0, 0, 0,))); 
         //score = "Zombies Killed: " + Background.killCount;
         //getWorld().score.setText("Zombies Killed: " + Background.killCount);
-        Background.score.setText("hi");
-        getWorld().getBackground().drawString("Kill Count: " + Background.killCount, 3, 25);
+        //getWorld().getBackground().drawString("Kill Count: " + Background.killCount, 3, 25);
         //getWorld().getBackground().drawString(score, 3, 25);
+        setText("Kill count: " + Background.killCount);
     }
     
     public KillCount()
     {
-        this(""); 
+        this("");
     }
     
     public KillCount(String text)
     {
-        setText(text);
     }
     
     public void setText(String text)
     {
-        setImage(new GreenfootImage(text, 24, Color.black, new Color(0, 0, 0, 0)));
+        label.clear();
+        Font font = new Font("Verdana", Font.BOLD, 10);
+        label.setFont(font);
+        label.drawString(text, 30, 10);
+        setImage(label);
     }
 }
