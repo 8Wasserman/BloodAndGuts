@@ -14,7 +14,7 @@ public class MapChanger extends Actor
         if (Greenfoot.isKeyDown("s")) // Checks if S key is pressed
         { 
             Greenfoot.setWorld(new Background()); //Changes world if above statement occurs
-            Greenfoot.playSound("MenuSelect.wav"); // Plays shot audio
+            Greenfoot.playSound("MenuSelect.wav"); // Plays menu select audio
         }
     }    
 }

@@ -14,6 +14,7 @@ public class Start extends World
         // Create a world with dimensions 1280 by 720 cells with a cell size of 1 pixel
         super(1280, 720, 1);
         prepare();
+        Greenfoot.playSound("MenuSong.wav"); // Plays shot audio
     }
 
     /**
