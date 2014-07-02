@@ -30,10 +30,10 @@ public class Background extends World
         Player player = new Player(); 
         
         // Creates Score + Wave
-        KillCount score = new KillCount();
+        /*KillCount score = new KillCount();
         addObject(score, 13, 75);
         waveNumber wave = new waveNumber();
-        addObject(wave, 13, 75);
+        addObject(wave, 13, 75);*/
         
         //Creates enemies
         Enemy enemy = new Enemy(); 

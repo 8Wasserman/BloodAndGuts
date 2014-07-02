@@ -15,10 +15,10 @@ public class waveNumber extends Actor
      */
     public void act() 
     {
-        Font font = getWorld().getBackground().getFont();  
+       /* Font font = getWorld().getBackground().getFont();  
         font = font.deriveFont(28.0f);  
         getWorld().getBackground().setFont(font);  
         getWorld().getBackground().setColor(Color.blue);//or another color  
-        getWorld().getBackground().drawString("Wave: ", 3, 60);  
+        getWorld().getBackground().drawString("Wave: ", 3, 60);  */
     }    
 }

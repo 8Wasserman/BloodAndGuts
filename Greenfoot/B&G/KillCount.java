@@ -23,7 +23,9 @@ public class KillCount extends Actor
         //getWorld().score.setText("Zombies Killed: " + Background.killCount);
         //getWorld().getBackground().drawString("Kill Count: " + Background.killCount, 3, 25);
         //getWorld().getBackground().drawString(score, 3, 25);
-        setText("Kill count: " + Background.killCount);
+        
+        //Actually used
+        //setText("Kill count: " + Background.killCount);
     }
     
     public KillCount()
