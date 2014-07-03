@@ -297,10 +297,17 @@ target8.type=ClassTarget
 target8.width=100
 target8.x=100
 target8.y=130
+<<<<<<< HEAD
 target9.editor.height=1032
 target9.editor.width=960
 target9.editor.x=388
 target9.editor.y=0
+=======
+target9.editor.height=1050
+target9.editor.width=1938
+target9.editor.x=-9
+target9.editor.y=-9
+>>>>>>> origin/master
 target9.height=50
 target9.name=Player
 target9.naviview.expanded=true
