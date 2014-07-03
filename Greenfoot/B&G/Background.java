@@ -26,12 +26,7 @@ public class Background extends World
     private void prepare()
     {
          // Adds hearts
-        Heart heart = new Heart();
-        Heart heart2 = new Heart();
-        Heart heart3 = new Heart();
-        addObject(heart, 1248, 32);
-        addObject(heart2, 1188, 32);
-        addObject(heart3, 1128, 32);
+       
         killCount = 0;
         // Creates new player
         Player player = new Player(); 

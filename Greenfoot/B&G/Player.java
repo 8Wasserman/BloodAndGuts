@@ -11,8 +11,23 @@ public class Player extends Actor
     long lastAdded = System.currentTimeMillis();
     public void act() // Main player method
     { 
+        Heart heart = new Heart();
+        Heart heart2 = new Heart();
+        Heart heart3 = new Heart();
+        getWorld().addObject(heart, 1248, 32);
+        getWorld().addObject(heart2, 1188, 32);
+        getWorld(). addObject(heart3, 1128, 32);
+        if (health == 66)
+        {
+            getWorld().removeObject(heart3);
+        }
+        if (health == 32)
+        {
+            getWorld().removeObject(heart2);
+        }
         if (health <= 0)
         {      
+            getWorld().removeObject(heart);
             Greenfoot.setWorld(new GameOver());  
             Greenfoot.playSound("DeathSong.wav"); // Plays hit audio
         }
