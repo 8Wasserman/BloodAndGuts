@@ -56,7 +56,7 @@ public class Player extends Actor
     public void shoot() // Shooting method
     {
         long curTime = System.currentTimeMillis();
-        if(curTime >= lastAdded + 1250) // Delay between shots
+        if(curTime >= lastAdded + 900) // Delay between shots
         {
             MouseInfo mouse = Greenfoot.getMouseInfo();  // Initializes mouse
             if (mouse == null)
@@ -90,6 +90,22 @@ public class Player extends Actor
         if (Greenfoot.isKeyDown("down") || (Greenfoot.isKeyDown("s"))) // Move down
         {
             setLocation(getX(), getY() + 4);
+        }
+        if(getY() < 46)
+        {
+            setLocation(getX(), 46);
+        }
+        if(getY() > 656)
+        {
+            setLocation(getX(), 656);
+        }
+        if(getX() < 46)
+        {
+            setLocation(46, getY());
+        }
+        if(getX() > 1234)
+        {
+            setLocation(1234, getY());
         }
     }
      public void hitZomb() // Human takes damage
