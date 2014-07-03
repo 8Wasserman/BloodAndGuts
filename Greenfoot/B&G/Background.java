@@ -25,6 +25,13 @@ public class Background extends World
      */
     private void prepare()
     {
+         // Adds hearts
+        Heart heart = new Heart();
+        Heart heart2 = new Heart();
+        Heart heart3 = new Heart();
+        addObject(heart, 1248, 32);
+        addObject(heart2, 1188, 32);
+        addObject(heart3, 1128, 32);
         killCount = 0;
         // Creates new player
         Player player = new Player(); 
@@ -35,11 +42,13 @@ public class Background extends World
         waveNumber wave = new waveNumber();
         addObject(wave, 13, 75);*/
         
-        //Spawners
+        // Spawners
         Spawner spawn = new Spawner();
         addObject(spawn, 1266, 704);
         botSpawner botspawn = new botSpawner();
         addObject(botspawn, 1266, 704);
+        
+       
         
         // Adds objects to world at specified coordinates
         addObject(player, 335, 424); 
