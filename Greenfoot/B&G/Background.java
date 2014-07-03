@@ -35,21 +35,13 @@ public class Background extends World
         waveNumber wave = new waveNumber();
         addObject(wave, 13, 75);*/
         
-        //Creates enemies
-        Enemy enemy = new Enemy(); 
-        Enemy enemy2 = new Enemy(); 
-        Enemy enemy3 = new Enemy(); 
-        Enemy enemy4 = new Enemy(); 
-        Enemy enemy5 = new Enemy(); 
-        Enemy enemy6 = new Enemy();
+        //Spawners
+        Spawner spawn = new Spawner();
+        addObject(spawn, 1266, 704);
+        botSpawner botspawn = new botSpawner();
+        addObject(botspawn, 1266, 704);
         
         // Adds objects to world at specified coordinates
         addObject(player, 335, 424); 
-        addObject(enemy, 959, 49);
-        addObject(enemy2, 1134, 105);
-        addObject(enemy3, 1193, 219); 
-        addObject(enemy4, 1214, 320);
-        addObject(enemy5, 1137, 381);
-        addObject(enemy6, 976, 385);
     }
 }

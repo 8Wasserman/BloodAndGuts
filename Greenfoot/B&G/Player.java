@@ -15,7 +15,7 @@ public class Player extends Actor
         checkClick();
         hitZomb();
         
-        /*Heart heart = new Heart();
+        Heart heart = new Heart();
         Heart heart2 = new Heart();
         Heart heart3 = new Heart();
 
@@ -30,7 +30,7 @@ public class Player extends Actor
         if(health <= 32)
         {
             getWorld().removeObject(heart2);
-        }*/
+        }
         if (health <= 0)
         {          
             //getWorld().removeObject(heart); 
