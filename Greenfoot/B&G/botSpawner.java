@@ -16,7 +16,7 @@ public class botSpawner extends Actor
     {
         if(Greenfoot.getRandomNumber(150) == 1)
         {
-            getWorld().addObject(new Enemy(), Greenfoot.getRandomNumber(getWorld().getWidth()), 720);
+            getWorld().addObject(new Enemy(), Greenfoot.getRandomNumber(getWorld().getWidth()), 656);
         }
     }
 }
