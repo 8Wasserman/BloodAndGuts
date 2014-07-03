@@ -15,7 +15,7 @@ public class Player extends Actor
     boolean spawnHearts = true;
         
     public void act() // Main player method
-    {        
+    { 
         if(spawnHearts)
         {
             getWorld().addObject(heart, 1248, 32);
@@ -25,14 +25,17 @@ public class Player extends Actor
         spawnHearts = false;
         
         hitZomb();
+        
         if (health <= 66 && health > 32)
         {
             getWorld().removeObject(heart3);
         }
-        if (health == 32)
+        
+        if (health <= 32 && health > 0)
         {
             getWorld().removeObject(heart2);
         }
+        
         if (health <= 0)
         {      
             getWorld().removeObject(heart);
