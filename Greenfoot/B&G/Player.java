@@ -18,9 +18,9 @@ public class Player extends Actor
     { 
         if(spawnHearts)
         {
-            getWorld().addObject(heart, 1248, 32);
-            getWorld().addObject(heart2, 1188, 32);
-            getWorld().addObject(heart3, 1128, 32);
+            getWorld().addObject(heart, 1214, 84);
+            getWorld().addObject(heart2, 1160, 84);
+            getWorld().addObject(heart3, 1106, 84);
         }
         spawnHearts = false;
         

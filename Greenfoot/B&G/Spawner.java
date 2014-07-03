@@ -20,7 +20,7 @@ public class Spawner extends Actor
     {
         if(Greenfoot.getRandomNumber(150) == 1)
         {
-            getWorld().addObject(new Enemy(), Greenfoot.getRandomNumber(getWorld().getWidth()), 0);
+            getWorld().addObject(new Enemy(), Greenfoot.getRandomNumber(getWorld().getWidth()), 46);
         }
     }
 }
