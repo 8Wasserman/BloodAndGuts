@@ -1,5 +1,9 @@
 #Greenfoot properties
+<<<<<<< HEAD
 #Thu Jul 03 11:35:21 CDT 2014
+=======
+#Thu Jul 03 11:10:32 CDT 2014
+>>>>>>> origin/master
 class.Heart.superclass=greenfoot.Actor
 target2.name=Bullet
 target9.name=Player
@@ -34,8 +38,13 @@ dependency8.type=UsesDependency
 dependency5.from=Bullet
 target12.y=10
 target12.x=70
+<<<<<<< HEAD
 target3.editor.y=169
 target3.editor.x=623
+=======
+target3.editor.y=164
+target3.editor.x=612
+>>>>>>> origin/master
 project.charset=UTF-8
 dependency15.to=escListener
 target15.name=OptionChanger
@@ -60,8 +69,13 @@ target6.type=ClassTarget
 dependency30.to=botSpawner
 target7.y=190
 target7.x=100
+<<<<<<< HEAD
 target12.editor.y=110
 target12.editor.x=518
+=======
+target12.editor.y=108
+target12.editor.x=602
+>>>>>>> origin/master
 dependency31.type=UsesDependency
 target8.editor.width=900
 target3.y=70
@@ -90,8 +104,13 @@ target2.showInterface=false
 target7.name=Controls
 dependency16.to=Controls
 class.Start.superclass=greenfoot.World
+<<<<<<< HEAD
 target1.editor.y=131
 target1.editor.x=518
+=======
+target1.editor.y=24
+target1.editor.x=48
+>>>>>>> origin/master
 dependency13.from=OptionChanger
 dependency16.type=UsesDependency
 target8.width=100
@@ -148,7 +167,11 @@ dependency19.from=Player
 target6.y=130
 class.Bullet.superclass=greenfoot.Actor
 target6.x=10
+<<<<<<< HEAD
 target9.editor.height=1032
+=======
+target9.editor.height=909
+>>>>>>> origin/master
 target10.width=80
 target2.y=70
 target10.editor.height=695
@@ -162,8 +185,13 @@ dependency11.to=Enemy
 target6.height=50
 target7.editor.width=900
 class.MapChanger.image=8_bit_zombie_by_melolzugaming-d50kbqk.png
+<<<<<<< HEAD
 target9.editor.y=0
 target9.editor.x=808
+=======
+target9.editor.y=122
+target9.editor.x=1
+>>>>>>> origin/master
 dependency5.type=UsesDependency
 dependency2.from=Player
 dependency9.from=Background
@@ -264,8 +292,13 @@ target3.name=Enemy
 target13.y=370
 target7.height=50
 target13.x=10
+<<<<<<< HEAD
 target2.editor.y=82
 target2.editor.x=455
+=======
+target2.editor.y=81
+target2.editor.x=915
+>>>>>>> origin/master
 target7.editor.height=700
 dependency7.to=Enemy
 dependency12.type=UsesDependency
@@ -287,7 +320,11 @@ target6.editor.height=790
 target15.editor.height=700
 dependency1.to=Player
 dependency30.from=Background
+<<<<<<< HEAD
 target9.editor.width=960
+=======
+target9.editor.width=1918
+>>>>>>> origin/master
 target5.width=90
 target1.naviview.expanded=true
 target15.naviview.expanded=true
