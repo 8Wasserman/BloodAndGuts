@@ -10,7 +10,7 @@ class.Controls.image=ControlPanel.png
 class.Controls.superclass=greenfoot.World
 class.Enemy.image=ZombieForward.png
 class.Enemy.superclass=greenfoot.Actor
-class.GameOver.image=rivets.jpg
+class.GameOver.image=EndScreen.png
 class.GameOver.superclass=greenfoot.World
 class.Heart.image=Heart.png
 class.Heart.superclass=greenfoot.Actor
@@ -297,24 +297,10 @@ target8.type=ClassTarget
 target8.width=100
 target8.x=100
 target8.y=130
-<<<<<<< HEAD
-target9.editor.height=1017
-target9.editor.width=1920
-target9.editor.x=0
-target9.editor.y=15
-=======
-<<<<<<< HEAD
-target9.editor.height=804
-target9.editor.width=1201
-target9.editor.x=326
-target9.editor.y=167
-=======
 target9.editor.height=1050
-target9.editor.width=1938
+target9.editor.width=1932
 target9.editor.x=-9
 target9.editor.y=-9
->>>>>>> 021a0a9bda8ff3981871c4b6e3c889ae1a965380
->>>>>>> origin/master
 target9.height=50
 target9.name=Player
 target9.naviview.expanded=true
