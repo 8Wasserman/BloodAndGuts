@@ -1,7 +1,7 @@
 #Greenfoot project file
 =\=\=\=\=\=\=
 <<<<<<<=HEAD
->>>>>>>=origin/master
+>>>>>>>=021a0a9bda8ff3981871c4b6e3c889ae1a965380
 class.Background.image=BGMap.png
 class.Background.superclass=greenfoot.World
 class.Bullet.image=TempBull.png
@@ -297,17 +297,10 @@ target8.type=ClassTarget
 target8.width=100
 target8.x=100
 target8.y=130
-<<<<<<< HEAD
-target9.editor.height=804
-target9.editor.width=1201
-target9.editor.x=326
-target9.editor.y=167
-=======
 target9.editor.height=1050
-target9.editor.width=1938
+target9.editor.width=1932
 target9.editor.x=-9
 target9.editor.y=-9
->>>>>>> 021a0a9bda8ff3981871c4b6e3c889ae1a965380
 target9.height=50
 target9.name=Player
 target9.naviview.expanded=true
