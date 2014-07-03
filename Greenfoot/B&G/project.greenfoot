@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #Greenfoot project file
 =\=\=\=\=\=\=
 <<<<<<<=HEAD
@@ -13,6 +14,14 @@ class.Enemy.superclass=greenfoot.Actor
 class.GameOver.image=rivets.jpg
 class.GameOver.superclass=greenfoot.World
 class.Heart.image=Heart.png
+=======
+#Greenfoot properties
+<<<<<<< HEAD
+#Thu Jul 03 11:35:21 CDT 2014
+=======
+#Thu Jul 03 11:10:32 CDT 2014
+>>>>>>> origin/master
+>>>>>>> origin/master
 class.Heart.superclass=greenfoot.Actor
 class.KillCount.superclass=greenfoot.Actor
 class.MapChanger.image=8_bit_zombie_by_melolzugaming-d50kbqk.png
@@ -31,8 +40,31 @@ class.waveNumber.superclass=greenfoot.Actor
 dependency1.from=Enemy
 dependency1.to=Player
 dependency1.type=UsesDependency
+<<<<<<< HEAD
 dependency10.from=Background
 dependency10.to=KillCount
+=======
+target14.editor.width=900
+dependency8.type=UsesDependency
+dependency5.from=Bullet
+target12.y=10
+target12.x=70
+<<<<<<< HEAD
+target3.editor.y=169
+target3.editor.x=623
+=======
+target3.editor.y=164
+target3.editor.x=612
+>>>>>>> origin/master
+project.charset=UTF-8
+dependency15.to=escListener
+target15.name=OptionChanger
+target5.height=50
+target1.name=Heart
+version=2.5.0
+target11.naviview.expanded=true
+target8.name=MapChanger
+>>>>>>> origin/master
 dependency10.type=UsesDependency
 dependency11.from=Background
 dependency11.to=Enemy
@@ -99,9 +131,21 @@ dependency3.to=Bullet
 dependency3.type=UsesDependency
 dependency30.from=Background
 dependency30.to=botSpawner
+<<<<<<< HEAD
 dependency30.type=UsesDependency
 dependency31.from=Background
 dependency31.to=Heart
+=======
+target7.y=190
+target7.x=100
+<<<<<<< HEAD
+target12.editor.y=110
+target12.editor.x=518
+=======
+target12.editor.y=108
+target12.editor.x=602
+>>>>>>> origin/master
+>>>>>>> origin/master
 dependency31.type=UsesDependency
 dependency4.from=Bullet
 dependency4.to=Enemy
@@ -161,6 +205,7 @@ target11.height=50
 target11.name=Spawner
 target11.naviview.expanded=true
 target11.showInterface=false
+<<<<<<< HEAD
 target11.type=ClassTarget
 target11.width=80
 target11.x=190
@@ -173,6 +218,25 @@ target12.height=50
 target12.name=Background
 target12.naviview.expanded=true
 target12.showInterface=false
+=======
+target2.showInterface=false
+target7.name=Controls
+dependency16.to=Controls
+class.Start.superclass=greenfoot.World
+<<<<<<< HEAD
+target1.editor.y=131
+target1.editor.x=518
+=======
+target1.editor.y=24
+target1.editor.x=48
+>>>>>>> origin/master
+dependency13.from=OptionChanger
+dependency16.type=UsesDependency
+target8.width=100
+class.escListener.superclass=greenfoot.Actor
+target13.editor.height=700
+target4.editor.height=700
+>>>>>>> origin/master
 target12.type=ClassTarget
 target12.width=90
 target12.x=70
@@ -183,6 +247,51 @@ target13.editor.x=40
 target13.editor.y=20
 target13.height=50
 target13.name=botSpawner
+<<<<<<< HEAD
+=======
+dependency21.to=waveNumber
+target7.naviview.expanded=true
+target6.name=Start
+dependency15.type=UsesDependency
+dependency12.from=Start
+target14.width=100
+dependency17.to=Start
+dependency19.from=Player
+target6.y=130
+class.Bullet.superclass=greenfoot.Actor
+target6.x=10
+<<<<<<< HEAD
+target9.editor.height=1032
+=======
+target9.editor.height=909
+>>>>>>> origin/master
+target10.width=80
+target2.y=70
+target10.editor.height=695
+target11.type=ClassTarget
+target2.x=160
+dependency22.type=UsesDependency
+dependency29.type=UsesDependency
+dependency26.from=KillCount
+target4.type=ClassTarget
+dependency11.to=Enemy
+target6.height=50
+target7.editor.width=900
+class.MapChanger.image=8_bit_zombie_by_melolzugaming-d50kbqk.png
+<<<<<<< HEAD
+target9.editor.y=0
+target9.editor.x=808
+=======
+target9.editor.y=122
+target9.editor.x=1
+>>>>>>> origin/master
+dependency5.type=UsesDependency
+dependency2.from=Player
+dependency9.from=Background
+class.escListener.image=8_bit_zombie_by_melolzugaming-d50kbqk.png
+target10.height=50
+dependency28.to=Enemy
+>>>>>>> origin/master
 target13.naviview.expanded=true
 target13.showInterface=false
 target13.type=ClassTarget
@@ -271,8 +380,34 @@ target6.naviview.expanded=true
 target6.showInterface=false
 target6.type=ClassTarget
 target6.width=80
+<<<<<<< HEAD
 target6.x=10
 target6.y=130
+=======
+class.Player.image=TempSprite.png
+target6.editor.y=123
+mainWindow.height=1030
+target9.naviview.expanded=true
+class.Bullet.image=TempBull.png
+target6.editor.x=978
+target14.showInterface=false
+target5.showInterface=false
+target1.editor.width=900
+class.Background.superclass=greenfoot.World
+target2.width=80
+target10.name=KillCount
+target3.name=Enemy
+target13.y=370
+target7.height=50
+target13.x=10
+<<<<<<< HEAD
+target2.editor.y=82
+target2.editor.x=455
+=======
+target2.editor.y=81
+target2.editor.x=915
+>>>>>>> origin/master
+>>>>>>> origin/master
 target7.editor.height=700
 target7.editor.width=900
 target7.editor.x=872
@@ -294,7 +429,23 @@ target8.name=MapChanger
 target8.naviview.expanded=true
 target8.showInterface=false
 target8.type=ClassTarget
+<<<<<<< HEAD
 target8.width=100
+=======
+target6.editor.height=790
+target15.editor.height=700
+dependency1.to=Player
+dependency30.from=Background
+<<<<<<< HEAD
+target9.editor.width=960
+=======
+target9.editor.width=1918
+>>>>>>> origin/master
+target5.width=90
+target1.naviview.expanded=true
+target15.naviview.expanded=true
+target8.y=130
+>>>>>>> origin/master
 target8.x=100
 target8.y=130
 target9.editor.height=909

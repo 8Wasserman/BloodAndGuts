@@ -15,6 +15,6 @@ public class Heart extends Actor
      */
     public void act() 
     {
-        // No action code
-    }    
+        getWorld().removeObject(this);
+    }  
 }
