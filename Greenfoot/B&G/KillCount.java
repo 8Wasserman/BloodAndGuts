@@ -25,7 +25,7 @@ public class KillCount extends Actor
         //getWorld().getBackground().drawString(score, 3, 25);
         
         //Actually used
-        //setText("Kill count: " + Background.killCount);
+        setText("Kill count: " + Background.killCount);
     }
     
     public KillCount()
@@ -42,7 +42,7 @@ public class KillCount extends Actor
         label.clear();
         Font font = new Font("Verdana", Font.BOLD, 10);
         label.setFont(font);
-        label.drawString(text, 30, 10);
+        label.drawString(text, 335, 424);
         setImage(label);
     }
 }
