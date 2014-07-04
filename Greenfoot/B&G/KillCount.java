@@ -45,7 +45,7 @@ public class KillCount extends Actor
     public void setText(String text)
     {
         label.clear();
-        Font font = new Font("Verdana", Font.BOLD, 16);
+        Font font = new Font("Verdana", Font.BOLD, 18);
         label.setFont(font);
         label.drawString(text, 40, 75);
         setImage(label);

@@ -22,7 +22,7 @@ public class GameOver extends World
        
         //Makes sure "Kill Count" does print before the number
         score.textOrNo = false;
-        addObject(score, 712, 440);
+        addObject(score, 709, 441);
     }
     
     /**

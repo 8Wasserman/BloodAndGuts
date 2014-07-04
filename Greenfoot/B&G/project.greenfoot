@@ -1,7 +1,7 @@
 #Greenfoot project file
 =\=\=\=\=\=\=
 <<<<<<<=HEAD
->>>>>>>=17ae670d42751da7d7ff704e19f9fdbc67536446
+>>>>>>>=origin/master
 class.Background.image=BGMap.png
 class.Background.superclass=greenfoot.World
 class.Bullet.image=TempBull.png
@@ -138,15 +138,9 @@ dependency9.to=Player
 dependency9.type=UsesDependency
 mainWindow.height=1030
 mainWindow.width=1918
-<<<<<<< HEAD
-mainWindow.x=2
-mainWindow.y=2
-package.numDependencies=33
-=======
 mainWindow.x=1
 mainWindow.y=1
 package.numDependencies=36
->>>>>>> origin/master
 package.numTargets=15
 project.charset=UTF-8
 simulation.speed=50
@@ -272,13 +266,8 @@ target4.x=10
 target4.y=310
 target5.editor.height=700
 target5.editor.width=900
-<<<<<<< HEAD
-target5.editor.x=57
-target5.editor.y=29
-=======
 target5.editor.x=919
 target5.editor.y=185
->>>>>>> origin/master
 target5.height=50
 target5.name=escListener
 target5.naviview.expanded=true
@@ -323,17 +312,10 @@ target8.type=ClassTarget
 target8.width=100
 target8.x=100
 target8.y=130
-<<<<<<< HEAD
-target9.editor.height=1030
-target9.editor.width=1918
-target9.editor.x=1
-target9.editor.y=1
-=======
 target9.editor.height=1050
 target9.editor.width=1932
 target9.editor.x=-9
 target9.editor.y=-9
->>>>>>> origin/master
 target9.height=50
 target9.name=Player
 target9.naviview.expanded=true

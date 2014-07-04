@@ -18,7 +18,7 @@ public class Spawner extends Actor
     }    
     public void spawn()
     {
-        if(Greenfoot.getRandomNumber(150) == 1)
+        if(Greenfoot.getRandomNumber(125) == 1)
         {
             getWorld().addObject(new Enemy(), Greenfoot.getRandomNumber(getWorld().getWidth()), 46);
         }
