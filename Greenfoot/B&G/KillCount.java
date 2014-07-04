@@ -10,6 +10,7 @@ import java.awt.Font;
 public class KillCount extends Actor
 {
     public GreenfootImage label = new GreenfootImage(200, 200);
+    public boolean textOrNo;
     /**
      * Act - do whatever the KillCount wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -25,7 +26,11 @@ public class KillCount extends Actor
         //getWorld().getBackground().drawString(score, 3, 25);
         
         //Actually used
-        setText("Kill count: " + Background.killCount);
+        if(textOrNo)
+        {
+            setText("Kill count: " + Background.killCount);
+    
+        }else setText("" + Background.killCount);
     }
     
     public KillCount()
@@ -40,9 +45,9 @@ public class KillCount extends Actor
     public void setText(String text)
     {
         label.clear();
-        Font font = new Font("Verdana", Font.BOLD, 10);
+        Font font = new Font("Verdana", Font.BOLD, 16);
         label.setFont(font);
-        label.drawString(text, 335, 424);
+        label.drawString(text, 40, 75);
         setImage(label);
     }
 }

@@ -14,7 +14,7 @@ public class escListener extends Actor
      */
     public void act() 
     {
-        if (Greenfoot.isKeyDown("escape")) // Checks if ESC key is pressed
+        if (Greenfoot.isKeyDown("escape") || Greenfoot.isKeyDown("m")) // Checks if ESC key is pressed
         {
             Greenfoot.setWorld(new Start()); //Changes world if above statement occurs
             Greenfoot.playSound("MenuSelect.wav"); // Plays shot audio            
