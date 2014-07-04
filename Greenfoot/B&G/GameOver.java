@@ -30,8 +30,8 @@ public class GameOver extends World
      */
      private void prepare()
     {
-        MapChanger mapchanger = new MapChanger();
-        addObject(mapchanger, 300, 500);
+        restart doover = new restart();
+        addObject(doover, 300, 500);
         escListener esclistener = new escListener();
         addObject(esclistener, 989, 500);
     }
