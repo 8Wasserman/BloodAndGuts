@@ -1,7 +1,7 @@
 #Greenfoot project file
 =\=\=\=\=\=\=
 <<<<<<<=HEAD
->>>>>>>=adb20dd20db202c5afea307df16cff956e714525
+>>>>>>>=17ae670d42751da7d7ff704e19f9fdbc67536446
 class.Background.image=BGMap.png
 class.Background.superclass=greenfoot.World
 class.Bullet.image=TempBull.png
@@ -129,8 +129,8 @@ dependency9.to=Player
 dependency9.type=UsesDependency
 mainWindow.height=1030
 mainWindow.width=1918
-mainWindow.x=1
-mainWindow.y=1
+mainWindow.x=2
+mainWindow.y=2
 package.numDependencies=33
 package.numTargets=15
 project.charset=UTF-8
@@ -210,7 +210,7 @@ target14.y=250
 target15.editor.height=700
 target15.editor.width=900
 target15.editor.x=0
-target15.editor.y=81
+target15.editor.y=98
 target15.height=50
 target15.name=OptionChanger
 target15.naviview.expanded=true
@@ -257,8 +257,8 @@ target4.x=10
 target4.y=310
 target5.editor.height=700
 target5.editor.width=900
-target5.editor.x=48
-target5.editor.y=24
+target5.editor.x=57
+target5.editor.y=29
 target5.height=50
 target5.name=escListener
 target5.naviview.expanded=true
@@ -303,42 +303,10 @@ target8.type=ClassTarget
 target8.width=100
 target8.x=100
 target8.y=130
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-target9.editor.height=1017
-target9.editor.width=1920
-target9.editor.x=0
-target9.editor.y=15
-=======
-<<<<<<< HEAD
-target9.editor.height=804
-target9.editor.width=1201
-target9.editor.x=326
-target9.editor.y=167
-=======
->>>>>>> adb20dd20db202c5afea307df16cff956e714525
->>>>>>> origin/master
->>>>>>> 17ae670d42751da7d7ff704e19f9fdbc67536446
-target9.editor.height=1050
-target9.editor.width=1932
-target9.editor.x=-9
-target9.editor.y=-9
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 021a0a9bda8ff3981871c4b6e3c889ae1a965380
->>>>>>> origin/master
->>>>>>> adb20dd20db202c5afea307df16cff956e714525
->>>>>>> origin/master
->>>>>>> 17ae670d42751da7d7ff704e19f9fdbc67536446
+target9.editor.height=1030
+target9.editor.width=1918
+target9.editor.x=1
+target9.editor.y=1
 target9.height=50
 target9.name=Player
 target9.naviview.expanded=true
