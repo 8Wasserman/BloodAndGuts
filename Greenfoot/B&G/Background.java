@@ -37,7 +37,7 @@ public class Background extends World
         waveNumber wave = new waveNumber();
         addObject(wave, 13, 75);*/
         
-       // Adds player to world at specified coordinates
+        // Adds player to world at specified coordinates
         addObject(player, 335, 424); 
         
         // Spawners
@@ -45,5 +45,9 @@ public class Background extends World
         addObject(spawn, 1266, 704);
         botSpawner botspawn = new botSpawner();
         addObject(botspawn, 1266, 704);
+        
+        //Puts Kill Count before the number
+        score.textOrNo = true;
+        addObject(score, 100, 100);
     }
 }
