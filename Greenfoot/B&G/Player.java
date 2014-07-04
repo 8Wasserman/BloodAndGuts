@@ -8,6 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Player extends Actor
 {
     int health = 100;
+    int speed = 8;
+    int shootingSpeed = 1;
     long lastAdded = System.currentTimeMillis();
     Heart heart = new Heart();
     Heart heart2 = new Heart();
@@ -56,7 +58,7 @@ public class Player extends Actor
     public void shoot() // Shooting method
     {
         long curTime = System.currentTimeMillis();
-        if(curTime >= lastAdded + 900) // Delay between shots
+        if(curTime >= lastAdded + shootingSpeed) // Delay between shots
         {
             MouseInfo mouse = Greenfoot.getMouseInfo();  // Initializes mouse
             if (mouse == null)
@@ -77,19 +79,19 @@ public class Player extends Actor
     {
         if (Greenfoot.isKeyDown("left") || (Greenfoot.isKeyDown("a"))) // Move left
         {
-            move(-4);
+            move(-speed);
         }
         if (Greenfoot.isKeyDown("right") || (Greenfoot.isKeyDown("d"))) // Move right
         {
-            move(4);
+            move(speed);
         }
         if (Greenfoot.isKeyDown("up") || (Greenfoot.isKeyDown("w"))) // Move up
         {
-            setLocation(getX(), getY() - 4);
+            setLocation(getX(), getY() - speed);
         }
         if (Greenfoot.isKeyDown("down") || (Greenfoot.isKeyDown("s"))) // Move down
         {
-            setLocation(getX(), getY() + 4);
+            setLocation(getX(), getY() + speed);
         }
         if(getY() < 46)
         {

@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Spawner extends Actor
 {
+    public static int spawnRate = 40;
     /**
      * Act - do whatever the spawner wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -18,7 +19,7 @@ public class Spawner extends Actor
     }    
     public void spawn()
     {
-        if(Greenfoot.getRandomNumber(125) == 1)
+        if(Greenfoot.getRandomNumber(spawnRate) == 1)
         {
             getWorld().addObject(new Enemy(), Greenfoot.getRandomNumber(getWorld().getWidth()), 46);
         }

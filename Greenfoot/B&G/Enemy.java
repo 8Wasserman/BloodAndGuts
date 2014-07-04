@@ -7,6 +7,7 @@ import greenfoot.*; // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 */
 public class Enemy extends Actor
 {  
+    int speed = 4;
     public void act() //Main enemy class
     {    
         followHuman();
@@ -29,7 +30,7 @@ public class Enemy extends Actor
                 }
             }
             turnTowards(closest.getX(),closest.getY()); // Sets rotation towards player
-            move(2);
+            move(speed);
             setRotation(0);
         }
     }
