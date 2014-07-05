@@ -8,8 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Player extends Actor
 {
     int health = 100;
-    int speed = 8;
-    int shootingSpeed = 1;
+    int speed = 4;
+    int shootingSpeed = 900;
     long lastAdded = System.currentTimeMillis();
     Heart heart = new Heart();
     Heart heart2 = new Heart();

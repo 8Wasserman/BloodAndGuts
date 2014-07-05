@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Spawner extends Actor
 {
-    public static int spawnRate = 40;
+    public static int spawnRate = 125;
     /**
      * Act - do whatever the spawner wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.

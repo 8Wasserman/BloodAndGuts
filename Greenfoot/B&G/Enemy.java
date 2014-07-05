@@ -7,7 +7,7 @@ import greenfoot.*; // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 */
 public class Enemy extends Actor
 {  
-    int speed = 4;
+    int speed = 2;
     public void act() //Main enemy class
     {    
         followHuman();

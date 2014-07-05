@@ -3,5 +3,5 @@ comment0.params=
 comment0.target=Background()
 comment1.params=
 comment1.target=void\ prepare()
-comment1.text=\r\n\ Prepare\ the\ world\ for\ the\ start\ of\ the\ program.\r\n\ Creates\ initial\ objects\ and\ adds\ them\ to\ the\ world.\r\n
+comment1.text=\n\ Prepare\ the\ world\ for\ the\ start\ of\ the\ program.\n\ Creates\ initial\ objects\ and\ adds\ them\ to\ the\ world.\n
 numComments=2
